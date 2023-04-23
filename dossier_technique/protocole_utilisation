@@ -1,5 +1,11 @@
 Pré-recquis:
-    - 
+    - python 3.0 ou plus
+    - pygame 2.3
     
-Protocole d'utilisation:
-    -
+Protocole d'utilisation Linux/Windows:
+    - Executer le fichier python script.py (situé dans dossier_technique/sources/script.py)
+    - Le programme vous demandera alors plusieurs informations dans la console python :
+        - Rentrer la largeur de votre écran d'ordinateur en pixel dans la console python
+        - Rentrer la hauteur de votre écran d'ordinateur en pixel dans la console python
+        - Rentrer le nombre de particules que vous souhaitez afficher (généralement entre 50 et 75) dans la console python
+    - Une fenêtre s'ouvrira alors avec la simulation du nombre de particules souhaité
