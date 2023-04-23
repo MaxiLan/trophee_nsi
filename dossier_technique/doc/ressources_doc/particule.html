@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>particule module &mdash; Documentation Simulation d&#39;un système de particules </title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="prev" title="sources" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Simulation d'un système de particules
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">sources</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">particule module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#particule.Particule"><code class="docutils literal notranslate"><span class="pre">Particule</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#particule.Particule.calculeAcceleration"><code class="docutils literal notranslate"><span class="pre">Particule.calculeAcceleration()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#particule.Particule.changementCouleur"><code class="docutils literal notranslate"><span class="pre">Particule.changementCouleur()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#particule.Particule.mettreMouvement"><code class="docutils literal notranslate"><span class="pre">Particule.mettreMouvement()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#particule.distance"><code class="docutils literal notranslate"><span class="pre">distance()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Simulation d'un système de particules</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">sources</a></li>
+      <li class="breadcrumb-item active">particule module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/particule.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-particule">
+<span id="particule-module"></span><h1>particule module<a class="headerlink" href="#module-particule" title="Lien permanent vers cette rubrique"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="particule.Particule">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">particule.</span></span><span class="sig-name descname"><span class="pre">Particule</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">taille</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xvitesse</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yvitesse</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">masse</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">couleur</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#particule.Particule" title="Lien permanent vers cette définition"></a></dt>
+<dd><p>Bases : <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Classe définissant les attributs de particules et leurs méthodes associées</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="particule.Particule.calculeAcceleration">
+<span class="sig-name descname"><span class="pre">calculeAcceleration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lst_particules</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">centre</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attraction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">largeur</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hauteur</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#particule.Particule.calculeAcceleration" title="Lien permanent vers cette définition"></a></dt>
+<dd><p>Calcule l’accéleration de la particule en fonction du centre de gravité (souris),
+mais gère aussi les actions liées aux boutons de la souris</p>
+<dl class="field-list simple">
+<dt class="field-odd">Paramètres<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lst_particules</strong> – (list) liste d’instances de la classe Particule</p></li>
+<li><p><strong>centre</strong> – (Particule) instance de la classe Particule correspondant au centre de gravité</p></li>
+<li><p><strong>attraction</strong> – (tuple) tuple de booléen représentant l’état des boutons de la souris</p></li>
+<li><p><strong>largeur</strong> – (int) largeur de l’écran en pixel</p></li>
+<li><p><strong>hauteur</strong> – (int) hauteur de l’écran en pixel</p></li>
+</ul>
+</dd>
+<dt class="field-even">Renvoie<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="particule.Particule.changementCouleur">
+<span class="sig-name descname"><span class="pre">changementCouleur</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lst_particules</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#particule.Particule.changementCouleur" title="Lien permanent vers cette définition"></a></dt>
+<dd><p>Change la couleur de la particule en fonction du nombre de particule voisines</p>
+<dl class="field-list simple">
+<dt class="field-odd">Paramètres<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>lst_particules</strong> – (list) liste d’instances de la classe Particule</p>
+</dd>
+<dt class="field-even">Renvoie<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="particule.Particule.mettreMouvement">
+<span class="sig-name descname"><span class="pre">mettreMouvement</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#particule.Particule.mettreMouvement" title="Lien permanent vers cette définition"></a></dt>
+<dd><p>Met en mouvement la particule en ajoutant la valeur de sa vitesse 
+à ses coordonnées</p>
+<dl class="field-list simple">
+<dt class="field-odd">Renvoie<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="particule.distance">
+<span class="sig-prename descclassname"><span class="pre">particule.</span></span><span class="sig-name descname"><span class="pre">distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#particule.distance" title="Lien permanent vers cette définition"></a></dt>
+<dd><p>Renvoie la distance en pixel entre 2 particules</p>
+<dl class="field-list simple">
+<dt class="field-odd">Paramètres<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> – (Particule) instance de la classe Particule</p></li>
+<li><p><strong>b</strong> – (Particule) instance de la classe Particule</p></li>
+</ul>
+</dd>
+<dt class="field-even">Renvoie<span class="colon">:</span></dt>
+<dd class="field-even"><p>(float) Distance entre les 2 particules</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="modules.html" class="btn btn-neutral float-left" title="sources" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Axel - Amine - Maxime.</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

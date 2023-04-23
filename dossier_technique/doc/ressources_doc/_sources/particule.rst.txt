@@ -1,0 +1,7 @@
+particule module
+================
+
+.. automodule:: particule
+   :members:
+   :undoc-members:
+   :show-inheritance:
