@@ -1,0 +1,5 @@
+Notre projet consiste en l’affichage d’un système de particules.
+Pour participer au trophée NSI, il nous fallait trouver une idée de projet intéressant.
+Nous avions décider de reprendre un ancien projet écrit en JavaScript, de le traduire en Python et d’ajouter de nouvelles fonctionnalitées.
+Quand vous lancez une simulation, une fenêtre s'ouvrira avec le nombre de particules souhaité.
+Vous pourrez ensuite intéragir avec celles-ci en bougeant votre souris, ou en utilisant le clic-gauche/clic-droit.
